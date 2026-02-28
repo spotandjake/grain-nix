@@ -28,4 +28,4 @@ grain.packages.${system}.preview # Latest preview
 ```
 
 ### Upgrading
-In order to use a different version this flake can be generated using `bash generate.sh <version>` if no version is given it will use `v0.6.6` make sure the version precisely matches the github release i.e `v0.6.6` is `grain-v0.6.6`, by default every output includes the preview release
+In order to use a different version this flake can be generated using `bash generate.sh <version>` if no version is given it will use `v0.7.2` make sure the version precisely matches the github release i.e `v0.7.2` is `grain-v0.7.2`, by default every output includes the preview release

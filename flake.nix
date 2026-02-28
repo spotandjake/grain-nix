@@ -1,4 +1,4 @@
-# Grain - grain-v0.6.6 Nix
+# Grain - grain-v0.6.2 Nix
 {
   inputs = {
     flakelight.url = "github:nix-community/flakelight";
@@ -13,13 +13,13 @@
             if (system == "aarch64-darwin" || system == "x86_64-darwin") then
               pkgs.fetchurl
                 {
-                  url = "https://github.com/grain-lang/grain/releases/download/grain-v0.6.6/grain-mac-x64";
-                  sha256 = "1fjc58ddz3bkipv3xddyllvrwhr648paaj2vd19mz7a29fvxv7j3";
+                  url = "https://github.com/grain-lang/grain/releases/download/grain-v0.6.2/grain-mac-x64";
+                  sha256 = "1xfkyh9ir8wawbgwwiq6xhl8xll5b9diwsx8xln4mi4r5kmkhfg9";
                 } else
               pkgs.fetchurl {
                 # "x86_64-linux"
-                url = "https://github.com/grain-lang/grain/releases/download/grain-v0.6.6/grain-linux-x64";
-                sha256 = "0cc683j8jjyyrx7jbcmafal2zyijkrpnvk265niwas9xlqrb0pm5";
+                url = "https://github.com/grain-lang/grain/releases/download/grain-v0.6.2/grain-linux-x64";
+                sha256 = "15i5dq5vpr7vy6mwr9rkw54h4sjrfcwckk6bndqxhyws0cy86l8y";
               };
           phases = [ "installPhase" ];
           installPhase = ''
@@ -35,12 +35,12 @@
               pkgs.fetchurl
                 {
                   url = "https://github.com/grain-lang/grain/releases/download/preview/grain-mac-x64";
-                  sha256 = "1gwcsi5r6nw782rw4kjbhwq73sphra8j75d2jfpjrhxki8xdr20i";
+                  sha256 = "0l376gwv4mxfl1jlkiw3bjm03xdws9sg8zfbbpsyqblxnpq3pmgp";
                 } else
               pkgs.fetchurl {
                 # "x86_64-linux"
                 url = "https://github.com/grain-lang/grain/releases/download/preview/grain-linux-x64";
-                sha256 = "1q3ijrr9pv246nqfvnjw6h8q8z321s7l8z2fc6fzyzx66c3s3mpp";
+                sha256 = "1pfsah5xc9fv85zk5ic2j7ml6v78p000q3r6ppkk2m1zsf8qhrc2";
               };
           phases = [ "installPhase" ];
           installPhase = ''
