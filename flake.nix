@@ -1,4 +1,4 @@
-# Grain - grain-v0.6.2 Nix
+# Grain - grain-v0.7.2 Nix
 {
   inputs = {
     flakelight.url = "github:nix-community/flakelight";
@@ -13,13 +13,13 @@
             if (system == "aarch64-darwin" || system == "x86_64-darwin") then
               pkgs.fetchurl
                 {
-                  url = "https://github.com/grain-lang/grain/releases/download/grain-v0.6.2/grain-mac-x64";
-                  sha256 = "1xfkyh9ir8wawbgwwiq6xhl8xll5b9diwsx8xln4mi4r5kmkhfg9";
+                  url = "https://github.com/grain-lang/grain/releases/download/grain-v0.7.2/grain-mac-x64";
+                  sha256 = "0l376gwv4mxfl1jlkiw3bjm03xdws9sg8zfbbpsyqblxnpq3pmgp";
                 } else
               pkgs.fetchurl {
                 # "x86_64-linux"
-                url = "https://github.com/grain-lang/grain/releases/download/grain-v0.6.2/grain-linux-x64";
-                sha256 = "15i5dq5vpr7vy6mwr9rkw54h4sjrfcwckk6bndqxhyws0cy86l8y";
+                url = "https://github.com/grain-lang/grain/releases/download/grain-v0.7.2/grain-linux-x64";
+                sha256 = "1pfsah5xc9fv85zk5ic2j7ml6v78p000q3r6ppkk2m1zsf8qhrc2";
               };
           phases = [ "installPhase" ];
           installPhase = ''

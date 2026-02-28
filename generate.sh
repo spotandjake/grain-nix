@@ -1,6 +1,6 @@
 #! /bin/bash
 
-VERSION=${1:-"grain-v0.6.2"}
+VERSION=${1:-"grain-v0.7.2"}
 echo "Generating Flake for: $VERSION"
 
 # Get Hash For mac
